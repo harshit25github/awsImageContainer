@@ -2,6 +2,9 @@ const Aws = require("aws-sdk");
 const path = require("path");
 Aws.config.loadFromPath(path.join(__dirname, "./awsConfig.json"));
 const s3 = new Aws.S3();
+/*****
+ * ask sir for access key and secret
+ */
 
 // s3.deleteBucket({ Bucket: "baalti" }, (err, data) => {
 //   console.log(data);
